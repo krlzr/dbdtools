@@ -1,4 +1,5 @@
 body {
+  color: black;
   font-family: 'DM Sans', sans-serif;
   overflow-x: hidden;
   margin: 0;
@@ -7,11 +8,11 @@ body {
   overflow-y: hidden;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-.loader{
+.loader {
   background: black;
   color: white;
   position: absolute;
@@ -24,7 +25,7 @@ body {
   z-index: 2;
 }
 
-.progress{
+.progress {
   position: absolute;
   top: 52%;
   height: 1px;
@@ -34,7 +35,7 @@ body {
   transition: all 1s ease;
 }
 
-.nav--bar{
+.nav--bar {
   position: absolute;
   display: flex;
   align-content: space-between;
@@ -43,23 +44,23 @@ body {
   margin-top: 30px;
 }
 
-.logo{
+.logo {
   margin-left: 40px;
 }
 
-.section{
+.section {
   display: flex;
   width: 100vw;
   height: 100vh;
   align-items: center;
 }
 
-.section--one--container{
+.section--one--container {
   width: 360px;
   margin-left: 15%;
 }
 
-.first h1{
+.first h1 {
   font-size: 10rem;
   line-height: 8rem;
   letter-spacing: -0.3rem;
@@ -67,7 +68,7 @@ body {
   margin: 0 0 30px -10px;
 }
 
-.button--hero{
+.button--hero {
   background: #F2CE6E;
   color: black;
   border: none;
@@ -81,7 +82,7 @@ body {
   transition: all 0.8s ease;
 }
 
-.button--customize{
+.button--customize {
   background: #F2CE6E;
   color: black;
   border: none;
@@ -94,12 +95,13 @@ body {
   cursor: pointer;
   transition: all 0.8s ease;
 }
-.button--hero:hover{
+
+.button--hero:hover {
   background: black;
   color: white;
 }
 
-.button--navbar{
+.button--navbar {
   background: black;
   color: white;
   border: none;
@@ -109,30 +111,30 @@ body {
   font-size: 0.6rem;
 }
 
-.second{
+.second {
   justify-content: flex-end;
   position: relative;
 }
 
-.section--two--container{
+.section--two--container {
   width: 360px;
   margin-right: 10%;
   z-index: 1;
 }
 
-.section--third--container{
+.section--third--container {
   width: 360px;
   margin-left: 10%;
   z-index: 1;
 }
 
-h2{
+h2 {
   font-size: 3rem;
   letter-spacing: -2px;
   line-height: 2.5rem;
 }
 
-.custom--bg{
+.custom--bg {
   width: 100%;
   height: 800px;
   background: #F2CE6E;
@@ -145,14 +147,14 @@ h2{
   left: 0;
 }
 
-footer{
+footer {
   background: black;
   padding: 70px;
   display: flex;
   justify-content: center;
 }
 
-.button--footer{
+.button--footer {
   background: white;
   color: black;
   border: none;
@@ -163,7 +165,7 @@ footer{
   transition: all 0.8s ease;
 }
 
-.button--footer:hover{
+.button--footer:hover {
   background: black;
   color: white;
 }
@@ -175,7 +177,7 @@ footer{
   top: 0;
 }
 
-#webgi-canvas-container{
+#webgi-canvas-container {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
@@ -186,7 +188,7 @@ footer{
   align-items: center;
 }
 
-.button--exit{
+.button--exit {
   width: 90px;
   margin-bottom: 5%;
   z-index: 5;
@@ -195,18 +197,18 @@ footer{
   display: none;
 }
 
-.customizer--container{
+.customizer--container {
   position: fixed;
   top: 50%;
   display: none;
   transform: translateY(-50%);
 }
 
-.strap--colors{
+.strap--colors {
   list-style: none;
 }
 
-.button--colors{
+.button--colors {
   width: 30px;
   height: 30px;
   border-radius: 50px;
@@ -217,20 +219,20 @@ footer{
   transition: all 0.8s ease;
 }
 
-.button--colors:hover{
+.button--colors:hover {
   filter: drop-shadow(0 0 0.75rem rgba(28, 17, 52, 0.704));
   transform: scale(1.5);
 }
 
-.yellow{
+.yellow {
   background-color: #F0D56C;
 }
 
-.red{
+.red {
   background-color: rgb(231, 34, 34);
 }
 
-.black{
+.black {
   background-color: rgb(74, 76, 79);
 }
 
@@ -239,11 +241,14 @@ footer{
 @media (max-width: 600px) {
 
 
-  html, body, .container, nav{
+  html,
+  body,
+  .container,
+  nav {
     overflow-x: hidden;
   }
 
-  .first h1{
+  .first h1 {
     font-size: 4rem;
     line-height: 4rem;
     letter-spacing: -0.1rem;
@@ -251,28 +256,28 @@ footer{
     margin: 0 0 15px 0px;
   }
 
-  .nav--bar{
+  .nav--bar {
     margin-top: 0;
     z-index: 1;
     background: #ffffffad;
     padding: 30px 0;
     backdrop-filter: blur(5px);
   }
-  
+
   .section--one--container {
     width: 360px;
     margin-left: 6%;
     margin-top: 40%;
   }
 
-  .section--one--container > p {
+  .section--one--container>p {
     width: 70%;
   }
 
-  .second{
+  .second {
     align-items: flex-end;
   }
-  
+
   .section--third--container {
     width: 220px;
     margin-left: 7%;
