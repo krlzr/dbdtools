@@ -86,7 +86,7 @@ async function setupViewer() {
 
     viewer.renderer.refreshPipeline()
 
-    await manager.addFromPath("./assets/ebaillybikestandnov.glb")
+    await manager.addFromPath("./assets/ebaillybikestandnov.2glb")
 
     const drillMaterial = manager.materials!.findMaterialsByName('Drill_01')[0] as MeshBasicMaterial2
 
