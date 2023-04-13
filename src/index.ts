@@ -86,7 +86,7 @@ async function setupViewer() {
 
     viewer.renderer.refreshPipeline()
 
-    await manager.addFromPath("./assets/ebaillybikestandnov.2glb")
+    await manager.addFromPath("./assets/ebaillybikestandnov2.glb")
 
     const drillMaterial = manager.materials!.findMaterialsByName('Drill_01')[0] as MeshBasicMaterial2
 
@@ -112,7 +112,7 @@ async function setupViewer() {
 
         tl
             .to(position, {
-                x: isMobile ? -6.0 : 1.56, y: isMobile ? 5.5 : -2.26, z: isMobile ? -3.3 : -3.85,
+                x: -1.56, y: 1.92, z: 1.68,
                 scrollTrigger: {
                     trigger: ".second",
                     start: "top bottom",
@@ -121,17 +121,8 @@ async function setupViewer() {
                 }, onUpdate
             })
 
-            .to(".section--one--container", {
-                xPercent: '-150', opacity: 0,
-                scrollTrigger: {
-                    trigger: ".second",
-                    start: "top bottom",
-                    end: "top 80%", scrub: 1,
-                    immediateRender: false
-                }
-            })
             .to(target, {
-                x: isMobile ? -1.1 : -1.37, y: isMobile ? 1.0 : 1.99, z: isMobile ? -0.1 : -0.37,
+                x: -0.61, y: 1.17, z: 0.88,
                 scrollTrigger: {
                     trigger: ".second",
                     start: "top bottom",
@@ -143,7 +134,7 @@ async function setupViewer() {
             // LAST SECTION
 
             .to(position, {
-                x: -3.4, y: 9.6, z: 1.71,
+                x: 2.64, y: 0.57, z: 0.002,
                 scrollTrigger: {
                     trigger: ".third",
                     start: "top bottom",
@@ -153,7 +144,7 @@ async function setupViewer() {
             })
 
             .to(target, {
-                x: -1.5, y: 2.13, z: -0.4,
+                x: 0.34, y: 0.57, z: 0.32,
                 scrollTrigger: {
                     trigger: ".third",
                     start: "top bottom",
